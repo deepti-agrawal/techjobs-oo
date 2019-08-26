@@ -30,7 +30,6 @@ public class JobController {
     public String index(Model model, int id) {
         Job job = jobData.findById(id);
         model.addAttribute("job",job);
-        System.out.println("$$$$$$$$$$$$$"+job.getName());
         return "job-detail";
     }
 
